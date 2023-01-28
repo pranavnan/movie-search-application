@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import MovieList from "./components/MovieList";
+import Header from "./components/Header";
+import MovieData from "./store/MovieData";
+import FavouritesData from "./components/FavouritesData";
+import classes from "./styles/MovieListHeading.module.css";
 
 function App() {
+  // Title, Year, imdbID, Type, Poster
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MovieData>
+      <Header heading="Movies" />
+      <div>
+        <MovieList />
+      </div>
+      <h1 className={classes.heading}>Favourites</h1>
+      <div>
+        <FavouritesData />
+      </div>
+    </MovieData>
   );
 }
 

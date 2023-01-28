@@ -1,0 +1,11 @@
+.movie-container {
+  list-style: none;
+  display: flex;
+  overflow: scroll;
+  gap: 4rem;
+  padding: 0 3rem 3rem 3rem;
+}
+
+.movie-container li:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,40 @@
+.list-item {
+  position: relative;
+  transition: all 0.4s;
+}
+
+.list-item:hover {
+  transform: scale(1.1);
+}
+
+.list-item img {
+  width: 26rem;
+  height: 32rem;
+  border-radius: 0.8rem;
+}
+
+.list-item img:hover {
+}
+
+.list-item button {
+  font-family: inherit;
+  position: absolute;
+  top: 90%;
+  left: 20%;
+  padding: 0.4rem 1rem;
+  background-color: #c85c8e;
+  /* background-color: #7b2869; */
+  border: none;
+  outline: none;
+  transition: all 0.3s;
+  font-size: 1.8rem;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.list-item button:hover {
+  cursor: pointer;
+}
+.list-item button:active {
+  scale: 0.92;
+}
